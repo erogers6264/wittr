@@ -15,6 +15,7 @@ IndexController.prototype._registerServiceWorker = function() {
   // Return if not present
   if (!navigator.serviceWorker) return;
 
+  // Register the service worker
   navigator.serviceWorker.register('../sw.js').then(function () {
     console.log('Registration worked!');
   }).catch(function (){
