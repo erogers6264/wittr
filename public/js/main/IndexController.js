@@ -12,7 +12,7 @@ export default function IndexController(container) {
 }
 
 IndexController.prototype._registerServiceWorker = function() {
-  // Return if not present
+  // Return if this feature is not present
   if (!navigator.serviceWorker) return;
 
   // Register the service worker
